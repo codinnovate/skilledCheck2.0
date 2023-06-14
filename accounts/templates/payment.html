@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block content %}
+<div class="payment p-5">
+  <center>
+    <div class="check-icon">
+      <i class="uil uil-check-circle text-3xl text-green-600"></i>
+    </div>
+    <h4 class="text-center">Your account has been created successfully</h4>
+    <div class="payment-icon mt-5">
+      <i class="uil uil-bill text-3xl text-green-600"></i>
+    </div>
+    <h2>
+      But currently inactive, please pay 5,500 Naira registration fee to
+      activate your account..
+    </h2>
+    <p class="mt-5 text-red-600 w-[40%]">
+      Only Pay to <br />
+      Bank Name: Leehadyyah International Limited ,<br />Bank; Jaiz: <br />
+      Account Number: 0009410323
+    </p>
+    <p class="mt-5">
+      Remember to send payment receipt to the chat box below, entering you
+      account name as name
+    </p>
+  </center>
+  <a href="{% url 'home' %}">Back to Home</a>
+</div>
+{% endblock content %}

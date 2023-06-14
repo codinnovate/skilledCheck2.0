@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% block content %}
+<div class="flex shadow-lg bg-white p-5">
+  <div class="flex flex-col items-center justify-center">
+    <div class="flex m-3">
+      <h1 class="text-xl text-center">
+        Help us share SkilledCheck Link to Your Friends and Family, You too may
+        earn a commission 🥰
+      </h1>
+    </div>
+
+    <div class="flex flex-col">
+      <div
+        class="rounded-full rounded-tr-lg rounded-bl-lg bg-yellow-600 p-2 px-3 m-2 text-white"
+      >
+        <h1 class="font-bold"><a href='{% url 'dashboard' %}'>Go To Dashboard For Account Activation</a></h1>
+      </div>
+
+      <div class="flex flex-col justify-center">
+        <!-- Facebook Share Button -->
+        <button
+          class="rounded-full rounded-tr-sm bg-[#365898] p-2 m-2 text-white"
+          onclick="shareOnFacebook()"
+        >
+          Share on Facebook
+        </button>
+
+        <!-- WhatsApp Share Button -->
+        <button
+          class="rounded-full rounded-br-lg bg-green-500 p-2 m-2 text-white"
+          onclick="shareOnWhatsApp()"
+        >
+          Share on WhatsApp
+        </button>
+
+        <!-- Instagram Share Button -->
+        <button
+          class="rounded-full rounded-tl-lg bg-[#d21675] p-2 m-2 text-white"
+          onclick="shareOnInstagram()"
+        >
+          Share on Instagram
+        </button>
+
+        <!-- Twitter Share Button -->
+        <button
+          class="rounded-full rounded-bl-lg bg-[#1c9bf0] p-2 m-2 text-white"
+          onclick="shareOnTwitter()"
+        >
+          Share on Twitter
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

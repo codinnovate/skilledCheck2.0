@@ -1,0 +1,25 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div class='flex'>
+  <div class="flex items-center justify-start">
+    <h2>Skilled Freelancers</h2>
+    </div
+    <div class="">
+      <div class="">
+        <h3>Filter &amp; Sorting</h3>
+        </div
+        <div class="flex">
+        <div class="">
+          </div 
+      </div
+<div class="flex m-4 justify-content items-center">
+  {% for person in freelancer_list %}
+  <div class="img-mask mask-2">
+    <img src="{{person.profile_pic.url}}" alt="" />
+  </div>
+  <h3>{{person.middle_name}}</h3>
+  <h3>{{person.phone_number}}</h3>
+  <h3>{{person.gender}}</h3>
+  {% endfor %}
+</div>
+</div
+{% endblock content %}

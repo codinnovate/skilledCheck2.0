@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+<div class="choosebanner">
+  <div class="flex flex-col justify-content-center items-center p-5 m-5">
+    <div data-cues="slideInDown" class="" data-group="join" data-delay="900">
+      <span
+        ><a
+          href="{% url 'login_client' %}"
+          class="btn btn-lg btn-primary rounded-pill mx-1 m-2"
+          >Login As Client</a
+        ></span
+      >
+      <span
+        ><a
+          href="{% url 'login_freelancer' %}"
+          class="btn btn-lg btn-outline-primary rounded-pill me-2 m-2"
+          >Login As A Freelancer/Experts/Professional</a
+        ></span
+      >
+      <div class="flex m-2 justify-end">
+        <a
+          class="bg-yellow-600 p-2 text-center text-white"
+          href="{% url 'home' %}"
+          >Back to Home</a
+        >
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
