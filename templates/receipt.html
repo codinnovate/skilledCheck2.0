@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Receipt</title>
+    <style>
+      /* Add your CSS styles here */
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Receipt</h1>
+      <div class="section">
+        <h2 class="section-heading">Receipt Information</h2>
+        <div class="row">
+          <span class="label">Date:</span>
+          <span class="value">{{ date }}</span>
+        </div>
+        <div class="row">
+          <span class="label">Receipt Number:</span>
+          <span class="value">{{ receipt_number }}</span>
+        </div>
+      </div>
+      <div class="section">
+        <h2 class="section-heading">Product Details</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Quantity</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for product in Receipts %}
+            <tr>
+              <td>{{ product.name }}</td>
+              <td>{{ product.quantity }}</td>
+              <td>{{ product.price }}</td>
+              <td>{{ product.total }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+          <tfoot>
+            <tr>
+              <td colspan="3" class="total-label">Total</td>
+              <td class="total-value">{{ total }}</td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+      <div class="section payment-info">
+        <h2 class="section-heading">Payment Information</h2>
+        <div class="row">
+          <span class="payment-label">Payment Method:</span>
+          <span class="payment-value">{{ payment_method }}</span>
+        </div>
+        <div class="row">
+          <span class="payment-label">Amount Paid:</span>
+          <span class="payment-value">{{ amount_paid }}</span>
+        </div>
+        <div class="row">
+          <span class="payment-label">Change:</span>
+          <span class="payment-value">{{ change }}</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

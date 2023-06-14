@@ -1,0 +1,186 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="freelancing,website">
+    <meta name="keywords" content="freelancing, getting job done, how to">
+    <meta name="author" content="cody">
+    <title>SkilledCheck - Start Earning With Your Skill</title>
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/colors/grape.css' %}">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+    
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/63656539b0d6371309cd5bff/1gh216qho';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+</head>
+
+<body>
+    <div class="content-wrapper">
+        <header class="wrapper bg-soft-primary">
+            <nav class="navbar navbar-expand-lg center-nav transparent navbar-light">
+                <div class="container flex-lg-row flex-nowrap align-items-center">
+                    <div class="navbar-brand w-100">
+                        <a href="{% url 'home' %}">
+                            <span class="logo">Skilled<span class="check text-center text-yellow">Check</span>.</span>
+                        </a>
+                    </div>
+                    <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+                        <div class="offcanvas-header d-lg-none">
+                            <h3 class="text-white fs-30 mb-0">SkilledCheck</h3>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body ms-lg-auto d-flex flex-column h-100">
+                            
+                            <!-- /.navbar-nav -->
+                            <div class="offcanvas-footer d-lg-none">
+                                <div>
+                                    <p class="mb-0">
+                                    07051974319
+                                    <br>
+                                    08088995445
+                                    <br >
+                                    08067054610 
+                                </p>
+                                    <nav class="nav social social-white mt-4">
+                                        <a href="www.twitter.com/skilledcheck"><i class="uil uil-twitter"></i></a>
+                                        <a href="www.facebook.com/skilledcheck"><i class="uil uil-facebook-f"></i></a>
+                                        <a href="www.instgram.com/skilledcheck"><i class="uil uil-instagram"></i></a>
+                                    </nav>
+                                    <!-- /.social -->
+                                </div>
+                            </div>
+                            <!-- /.offcanvas-footer -->
+                        </div>
+                        <!-- /.offcanvas-body -->
+                    </div>
+                 
+                </div>
+                <!-- /.container -->
+            </nav>
+            <!-- /.navbar -->
+        </header>
+
+        {% block content %}
+        
+        {% endblock content %}
+
+
+        <footer class="bg-white">
+            <div class="container pt-8 pt-md-10 pb-7">
+                <div class="row gx-lg-0 gy-6">
+                    <div class="col-lg-4">
+                        <div class="widget">
+                            <span class="logo">Skilled<span class="check">Check</span>.</span>
+                            <p class="lead mb-0">We are trusted by over 10M clients. Join them by using our services and get the job done now.</p>
+                        </div>
+                        <!-- /.widget -->
+                    </div>
+                    <!-- /column -->
+                    <div class="col-lg-3 offset-lg-2">
+                        <div class="widget">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
+                                </div>
+                                <div>
+                                    <h5 class="mb-1">Phone</h5>
+                                    <p class="mb-0">
+                                        07051974319
+                                        <br>
+                                        08088995445
+                                        <br >
+                                        08067054610 
+                                    </p>                                </div>
+                            </div>
+                            <!--/div -->
+                        </div>
+                        <!-- /.widget -->
+                    </div>
+                    <!-- /column -->
+                    <div class="col-lg-3">
+                        <div class="widget">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="uil uil-location-pin-alt"></i> </div>
+                                </div>
+                                <div class="align-self-start justify-content-start">
+                                    <h5 class="mb-1">Address</h5>
+                                    <address>No 71, Ogun Line, Opposite BusyBrain Computer, <br>
+                                          Mammy Complex, Ojo Cantonment, Lagos State.</address>
+                                </div>
+                            </div>
+                            <!--/div -->
+                        </div>
+                         <div class="col-lg-3">
+                        <div class="widget">
+                            <div class="d-flex flex-row">
+                                <div>
+                                    <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="uil uil-at"></i> </div>
+                                </div>
+                                <div class="align-self-start justify-content-start">
+                                    <h5 class="mb-1">Send A Mail</h5>
+                                    <address><a href='mailto:"Support@SkilledCheck.com"'>Support@SkilledCheck.com</a> </address>
+                                </div>
+                            </div>
+                            <!--/div -->
+                        </div>
+                        <!-- /.widget -->
+                    </div>
+                    <!-- /column -->
+                </div>
+                <!--/.row -->
+                <hr class="mt-13 mt-md-14 mb-7" />
+                <div class="d-md-flex align-items-center justify-content-between">
+                    <p class="mb-2 mb-lg-0">© 2022 SkilledCheck Limited All rights reserved.</p>
+                    <nav class="nav social social-muted mb-0 text-md-end">
+                        <a href="#"><i class="uil uil-twitter"></i></a>
+                        <a href="#"><i class="uil uil-facebook-f"></i></a>
+                        <a href="#"><i class="uil uil-dribbble"></i></a>
+                        <a href="#"><i class="uil uil-instagram"></i></a>
+                        <a href="#"><i class="uil uil-youtube"></i></a>
+                    </nav>
+                    <!-- /.social -->
+                </div>
+            </div>
+            <!-- /.container -->
+        </footer>
+        <div class="progress-wrap">
+            <script type="text/javascript">
+                var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                (function(){
+                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                s1.async=true;
+                s1.src='https://embed.tawk.to/63656539b0d6371309cd5bff/1gh216qho';
+                s1.charset='UTF-8';
+                s1.setAttribute('crossorigin','*');
+                s0.parentNode.insertBefore(s1,s0);
+                })();
+                </script>
+        </div>
+        <script src="{% static 'assets/js/plugins.js' %}"></script>
+        <script src="{% static 'assets/js/theme.js' %}"></script>
+        <script src="{% static 'assets/js/cody.js' %}"></script>
+        </body>
+        
+        </html>        

@@ -1,0 +1,560 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="freelancing,website">
+    <meta name="keywords" content="freelancing, getting job done, how to">
+    <meta name="author" content="cody">
+    <title>SkilledCheck | Terms &amp; Conditions</title>
+    <link rel="shortcut icon" href="{% static 'assets/img/favicon.png' %}' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/plugins.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/css/colors/yello.css' %}">
+    <link rel="preload" href="{% static 'assets/css/fonts/urbanist.css' %}" as="style" onload="this.rel='stylesheet'">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<!--Start of Tawk.to Script-->
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/63656539b0d6371309cd5bff/1gh216qho';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
+  <!--End of Tawk.to Script-->
+</head>
+
+<body class="onepage" data-bs-spy="scroll" data-bs-target=".navbar-collapse .navbar-nav">
+  <div class="content-wrapper">
+    <header class="wrapper bg-gray">
+      <nav class="navbar navbar-expand-lg extended extended-alt navbar-light navbar-bg-light">
+        <div class="container flex-lg-column">
+          <!-- <div class="topbar d-flex flex-row justify-content-lg-center align-items-center">
+            <div class="navbar-brand"><a href="{% url 'home' %}">
+                <span class="logo">Skilled<span class="check">Check</span>.</span>
+            </a></div>
+          </div> -->
+          <div class="topbar d-flex flex-row justify-content-lg-center align-items-center">
+            <div class="navbar-brand"><a href="{% url 'home' %}">
+              <!-- <img src="{% static 'assets/img/favicon.png' %}" width="50px" height="50px" alt="" /> -->
+              <span class="logo">Skilled<span class="check">Check</span></span>
+
+            </a></div>
+          </div>
+          <!-- /.d-flex -->
+          <div class="navbar-collapse-wrapper bg-white d-flex flex-row align-items-center justify-content-between">
+            <div class="navbar-other w-100 d-none d-lg-block">
+              <nav class="nav social social-muted">
+                <a href="#"><i class="uil uil-twitter"></i></a>
+                <a href="#"><i class="uil uil-facebook-f"></i></a>
+                <a href="#"><i class="uil uil-instagram"></i></a>
+              </nav>
+              <!-- /.social -->
+            </div>
+            <!-- /.navbar-other -->
+            <div class="navbar-collapse offcanvas offcanvas-nav offcanvas-start">
+              <div class="offcanvas-header d-lg-none">
+                <span class="logo">Skilled<span class="check">Check</span></span>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column h-100">
+               
+                <!-- /.navbar-nav -->
+                <div class="offcanvas-footer d-lg-none">
+                  <div>
+                    <br /> 08025362532 <br />
+                    <nav class="nav social social-white mt-4">
+                      <a href="#"><i class="uil uil-twitter"></i></a>
+                      <a href="#"><i class="uil uil-facebook-f"></i></a>
+                                  <a href="#"><i class="uil uil-instagram"></i></a>
+                      <a href="#"><i class="uil uil-youtube"></i></a>
+                    </nav>
+                    <!-- /.social -->
+                  </div>
+                </div>
+                <!-- /.offcanvas-footer -->
+              </div>
+            </div>
+            <!-- /.navbar-collapse -->
+            <div class="navbar-other w-100 d-flex">
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-info"><i class="uil uil-user"></i></a></li>
+                <!-- <li class="nav-item"><a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-search"><i class="uil uil-search"></i></a></li>
+                <li class="nav-item d-lg-none">
+                  <button class="hamburger offcanvas-nav-btn"><span></span></button>
+                </li> -->
+              </ul>
+              <!-- /.navbar-nav -->
+            </div>
+            <!-- /.navbar-other -->
+          </div>
+          <!-- /.navbar-collapse-wrapper -->
+        </div>
+        <!-- /.container -->
+      </nav>
+      <!-- /.navbar -->
+      <div class="offcanvas offcanvas-end text-inverse" id="offcanvas-info" data-bs-scroll="true">
+        <div class="offcanvas-header">
+          <span class="logo">Skilled<span class="check">Check</span></span>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body pb-6">
+          <div class="widget mb-8">
+            <ul class="list-unstyled text-center">
+              <li class="nav-lin fs-20"><a href="{% url 'home' %}"><span class="account-icons"><i class="uil uil-estate"></i></span>
+                 <span class="text">Home</span></a></li>
+              {% if user.is_authenticated %}
+              <li class="nav-lin fs-20"><a href="{% url 'logout' %}"><span class="account-icons"><i class="uil uil-sign-out-alt"></i>
+              </span>
+              <span class="text">Logout</span></a></li>
+              {% else %}
+              <li class="nav-lin fs-20"><a href="{% url 'register' %}"><span class="account-icons"> <i class="uil uil-user-check"></i>
+              </span>
+              <span class="text">Register</span></a></li>
+              <li class="nav-lin fs-20"><a href="{% url 'login' %}"><span class="account-icons"><i class="uil uil-sign-in-alt"></i>
+              </span>
+              <span class="text">Login</span></a></li>
+              {% endif %}
+              
+            </ul>
+            
+          </div>
+    
+        </div>
+        <!-- /.offcanvas-body -->
+      </div>
+      <!-- /.offcanvas -->
+      <div class="offcanvas offcanvas-top bg-light" id="offcanvas-search" data-bs-scroll="true">
+        <div class="container d-flex flex-row py-6">
+          <form class="search-form w-100">
+            <input id="search-form" type="text" class="form-control" placeholder="Type keyword and hit enter">
+          </form>
+          <!-- /.search-form -->
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <!-- /.container -->
+      </div>
+      <!-- /.offcanvas -->
+    </header>
+{% block content %}
+
+    <div class="container">
+      <div class="row gx-0">
+        <aside class="col-xl-3 sidebar sticky-sidebar mt-md-0 py-16 d-none d-xl-block">
+          <div class="widget">
+            <nav id="sidebar-nav">
+              <ul class="list-unstyled text-reset">
+                <li><a class="nav-link scroll active" href="#terms-conditions"> TERMS</a></li>
+             <li><a class="nav-link scroll" href="#negotiations">1. SKILLEDCHECK NEGOTIATIONS</a></li>
+                <li><a class="nav-link scroll" href="#payments"> 2. SKILLEDCHECK PAYMENTS MODE </a></li>
+                <li><a class="nav-link scroll" href="#hiring"> 3. HIRING PROCESS</a></li>
+                <li><a class="nav-link scroll" href="#limitatioins">4. HIRING DECISIONS; LIMITATIONS ON HIRING</a></li>
+                <li><a class="nav-link scroll" href="#liability">5. DISCLAIMER OF LIABILITY FOR SKILLEDCHECK.</a></li>
+                <li><a class="nav-link scroll" href="#environment"> 6. WORK ENVIRONMENT.       </a></li> 
+                <li><a class="nav-link scroll" href="#supervision">7. PAYMENTS SUPERVISION AND LIMITATIONS ON SCOPE OF CONTRACT.</a></li> 
+                <li><a class="nav-link scroll" href="#legal">8. COMPLIANCE WITH LEGAL REQUIREMENTS</a></li> 
+                <li><a class="nav-link scroll" href="#freelancers">9. PAYING FREELANCERS</a></li> 
+                <li><a class="nav-link scroll" href="#notifications">10. REQUIRED NOTIFICATIONS</a></li> 
+                <li><a class="nav-link scroll" href="#indemination">11. INDEMNIFICATION</a></li> 
+                <li><a class="nav-link scroll" href="#policy">12. CHANGE AND UPGRADE OF POLICIES.</a></li> 
+                <li><a class="nav-link scroll" href="#termination">13. TERMINATION OF SKILLEDCHECK.</a></li>
+                <li><a class="nav-link scroll" href="#provisions">14. GENERAL PROVISIONS.</a></li>
+                <li><a class="nav-link scroll" href="#contact">15. CONTACTING US</a></li>
+
+              </ul>
+            </nav>
+            <!-- /nav -->
+          </div>
+          <!-- /.widget -->
+        </aside>
+        <!-- /column -->
+        <div class="col-xl-8">
+          <section id="terms-conditions" class="wrapper pt-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">Terms and Conditions</h2>
+                <p>If a Professional, Artisans or Skilled Men/Women and Clients signs up to register with or uses SkilledCheck Site, this Agreement (this “Agreement”) applies to Freelancers and Clients. Your registration with the Site after the effective date will signify your acceptance of and agreement to this Agreement. Please refer to the Terms of Service for the complete terms governing your usage of the Site and Site Services. Capitalized terms not defined in this Agreement have the meanings in the Terms of Services.
+                    This Agreement is a binding legal agreement by and between you (“Freelancer”, "Clients" and “you”) and SkilledCheck (“SkilledCheck” or “we”) and supersedes and replaces all prior agreements between Freelancers, Clients and SkilledCheck concerning SkilledCheck mode of Operation.     
+                </p>
+               
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="negotiations" class="wrapper pt-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">2. SKILLEDCHECK NEGOTIATIONS</h2>
+                <p>  - CONNECTING FREELANCER TO CLIENTS.
+                    If SkilledCheck connect any Freelancer to work for a Client, Client will be responsible for supervising the Freelancer. When, and only if, a Freelancer has been accepted for the job by way of agreement.
+                </p>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="payments" class="wrapper pt-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">2. SKILLEDCHECK PAYMENTS MODE</h2>
+                <p>      
+                    When a Client uses SkilledCheck to access any Freelancer, he/she must make payments directly into the Company Bank Account provided on SkilledCheck Site.       
+                  </p>
+                <p class="mb-0">Freelancers reserve the right to negotiate with the Client on behalf of SkilledCheck and inform SkilledCheck through support@SkilledCheck.com
+                </p>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="hiring" class="wrapper pt-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3"> 3. HIRING PROCESS</h2>
+                <p>  As a Freelancer, you will be contacted by SkilledCheck to know if you will be available to work and be linked to the requesting Client that needs the services of the Freelancer. No work can begin until the engagement is active on the SkilledCheck Site, and both the SkilledCheck, Freelancer and the Client are aware about the nature of the job available.
+                </p>
+                </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+          <section id="limitatioins" class="wrapper pt-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">4. HIRING DECISIONS; LIMITATIONS ON HIRING</h2>
+<p> Clients and Freelancers must acknowledges and agrees that there's no going 
+    to be exchange of money between them except approved by SkilledCheck. 
+    Freelancers shall be linked to Clients based upon SkilledCheck evaluation 
+    and determination that Freelancer possesses the skills, background, and education to satisfy the requirements of the assignment.
+     SkilledCheck does
+        
+</p>
+<ol>
+    <li> select the Freelancer for the Client;</li>
+    <li> have the authority or ability to decide to engage or end the engagement of the Freelancer on behalf of Client;</li>
+    <li> make any independent evaluation or investigation or otherwise conduct any due diligence regarding Freelancers, their resumes, qualifications, skills, background, or prior experience; or </li>
+    <li> make any representations or warranties as to the skills, experience, background, or education of any Freelancer. SkilledCheck is not responsible for and shall not have liability for Client’s use of or reliance on any Freelancer information posted or provided by SkilledCheck.</li>
+</ol>
+
+</div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+          <section id="liability" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">5. DISCLAIMER OF LIABILITY FOR SKILLEDCHECK.</h2>
+                <p>Client acknowledges and agrees that Client and Freelancer are solely responsible for Freelancer Services and for all work performed and Work Product. SkilledCheck provides no express warranty of, will have no implied warranty of, and will have no responsibility for SkilledCheck Services and/or Work Product. SkilledCheck expressly disclaims all express and implied warranties for Freelancer Services and/or Work Product, including, without limitation, warranties of non-infringement, merchantability, and fitness for a particular purpose. As between SkilledCheck, Freelancer, Clients Services, Work Product, and deliverables are provided.
+                </p>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+          <section id="environment" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">6. WORK ENVIRONMENT.                </h2>
+<p>                    Clients acknowledges and agrees that neither SkilledCheck nor the Freelancers will control the work environment in which the Freelancers will perform services for Client. Client will be solely responsible for ensuring that the work environment is safe and free from harassment and discrimination as required by applicable law.
+</p> 
+             </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+          <section id="supervison" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">7. PAYMENTS SUPERVISION AND LIMITATIONS ON SCOPE OF CONTRACT.</h2>
+<p>Client will be solely responsible for protecting its property, including by implementing and enforcing any agreements,
+policies or procedures to protect Client’s intellectual property and confidential information. Freelancers and Clients
+must acknowledges and agrees that
+
+
+</p>  
+<ol>
+    <li>SkilledCheck do have the power and ability to require a Freelancer to start or
+    stop work;</li>
+    <li>SkilledCheck can determine or control the term and condition of Freelancer’s contract employment
+    (including, but not limited to, pay, work hours, work schedules, work locations, performance evaluations, discipline,
+    and termination);</li>
+    <li>SkilledCheck merely provides the platform for Clients to assign work to Freelancer and separately
+    facilitates the relationship between the Clients and the Freelancers; and</li>
+    <li>SkilledCheck is not an employer or joint
+    employer of the Freelancer.</li>
+</ol>
+            </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+          <section id="legal" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">8. COMPLIANCE WITH LEGAL REQUIREMENTS</h2>
+<p>With respect to all Freelancers and Clients, they will comply with all applicable legal requirements, including without
+limitation all laws prohibiting discrimination, harassment, and retaliation and all laws concerning meal and rest
+breaks, expense reimbursements, and safety. Client will also comply with all reasonable directives by SkilledCheck and
+Clients regarding the SkilledCheck Policies.
+Client will immediately inform SkilledCheck through support@SkilledCheck.com of 
+
+
+<ol>
+    <li>any complaint by or against a either a
+    Freelancer or Client of harassment, discrimination, retaliation or unlawful activity; or</li>
+    <li>any request by a Freelancer
+</li>
+</ol>
+<p class="mb-2">
+for a leave of absence or disability accommodation or any awareness by Client of a potential disability or need for
+leave or accommodation. Client will cooperate with SkilledCheck to complete a prompt and thorough investigation of any
+complaint or to provide any leave or accommodation required by law.
+All Freelancers must be paid on a contract basis, non-exempt basis unless the SkilledCheck explicitly approves an exempt
+determination. If SkilledCheck approves an exempt determination, the Client is solely responsible for ensuring the
+determination remains appropriate. Client agrees never to request, encourage, or require secret negotiations with
+Freelancers to work off the clock or without reporting time to the SkilledCheck.</p>
+
+</p>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+
+          <section id="freelancers" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">9. PAYING FREELANCERS</h2>
+<p>
+                All Freelancers shall be paid on a weekly (Fridays) basis according to their individual work done within the week.
+</p>              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+
+          <section id="notifications" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">10. REQUIRED NOTIFICATIONS</h2>
+<p>Freelancers and Clients should notify SkilledCheck through support@SkilledCheck.com regarding their differences if any
+during work. Clients and Freelancers will provide written notice within 24 hours of its occurrence. Freelancers are
+responsible for their cases in the case of accident or injury.
+</p>
+
+</div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+
+          <section id="indemination" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">11. INDEMNIFICATION</h2>
+<p>In addition to the indemnification obligations set forth in the User Agreement, Client agrees to (a) release, indemnify,
+hold harmless, protect, and defend SkilledCheck and its respective partners, employees, directors, officers, agents,
+affiliates, and subsidiaries (each an “Indemnified Party”) from and against any and all claims by any person or entity,
+including a Freelancer; and (b) reimburse any Indemnified Party for any claims, expenses, costs (including attorneys’
+fees and court costs), obligations, losses, and damages.
+</p>
+
+</div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+
+          <section id="policy" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">12. CHANGE AND UPGRADE OF POLICIES.</h2>
+                <p>SkilledCheck may enter into a contract with a new provider or multiple providers to act as the employer of Payroll
+                Employees (“New Company”) and may end or change contracts with existing providers. If requested as a result of such
+                changes, Clients and Freelancers will cooperate with such New Company in every reasonable manner to ensure uninterrupted
+                performance of SkilledCheck.</p>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+
+          <section id="termination" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">13. TERMINATION OF SKILLEDCHECK.
+</h2>
+                <p>Without limiting SkilledCheck’s ability to terminate services provided to Clients under other Terms of Service,
+                SkilledCheck may terminate SkilledCheck Payroll at any time after providing Clients with notice of such termination at
+                least 30 days in advance of the final day SkilledCheck Payroll will be offered (the “Termination Date”). SkilledCheck
+                will have the obligation for wages and benefits accrued to Pay Freelancers as Sub-Contractors through and including the
+                Termination Date, at which point such duties will cease.</p>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+
+          <section id="provisons" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">14. GENERAL PROVISIONS</h2>
+<ol>
+    <li>Governing Law --- <br>
+    This Agreement and any Claim or action related thereto will be governed by and construed in accordance with the
+    Nigerians Civil Service Policies, without regard to its conflict of law provisions. Clients located in Nigeria and its
+    territories agree that any Claim between Client and SkilledCheck must be resolved as described in the subsections of the
+    User Agreement titled “Informal Dispute Resolution” and “Mandatory Binding Arbitration and Class Action/Jury Trial
+    Waiver.”</li>
+    <li>SEVERABILITY ---<br>
+    If any provision of this Agreement is, for any reason, held to be invalid or unenforceable, the other provisions of this
+    Agreement will be unimpaired, and the invalid or unenforceable provision will be deemed modified so that it is valid and
+    enforceable to the maximum extent permitted by applicable law.</li>
+    <li>NO ASSIGNMENT --- <br>
+    This Agreement, and the parties’ rights and obligations herein, may not be assigned, subcontracted, delegated, or
+    otherwise transferred by a party without the other party’s prior written consent, and any attempted assignment,
+    subcontract, delegation, or transfer in violation of the foregoing will be null and void.
+</li>
+    <li>WAIVER ---<br>
+    Any waiver or failure to enforce any provision of this Agreement on one occasion will not be deemed a waiver of any
+    other provision or of such provision on any other occasion.</li>
+    <li>EXECUTION AND DELIVERY; BINDING EFFECT ---<br>
+    The parties will evidence execution and delivery of this Agreement with the intention of becoming legally bound, by
+    accepting the Terms of Service on the Site.</li>
+</ol>
+
+            </div>
+
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+
+
+          <section id="contact" class="wrapper py-16">
+            <div class="card">
+              <div class="card-body p-10">
+                <h2 class="mb-3">15. CONTACTING US</h2>
+                <p>If you have any questions, or need assistance, please contact us through <a href='mailto:"support@SkilledCheck.com"'>support@SkilledCheck.com</a>
+</p>
+              </div>
+              <!--/.card-body -->
+            </div>
+            <!--/.card -->
+          </section>
+        </div>
+        <!-- /column -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+
+</div>
+<!-- /.content-wrapper -->
+<footer class="bg-gray">
+  <div class="container pt-13 pb-7">
+    <div class="row gx-lg-0 gy-6">
+      <div class="col-lg-4">
+        <div class="widget">
+          <img class="mb-4" src="{% static 'assets/img/logo.png' %}" width="100px" alt="" />
+          <p class=" mb-0">
+            Sign up on SkilledCheck today to experience the smartest and easiest way to invest your skill and/or to access qualified Professionals and Artisans that are capable and trust worthy to render satisfying home services of all kinds.</p>
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+      <div class="col-lg-3 offset-lg-2">
+        <div class="widget">
+          <div class="d-flex flex-row">
+            <div>
+              <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="uil uil-phone-volume"></i> </div>
+            </div>
+            <div>
+              <h5 class="mb-1">Phone</h5>
+              <p class="mb-0">08025362532 ,<br> 08135058802</p>
+            </div>
+          </div>
+          <!--/div -->
+        </div>
+        <!-- /.widget -->
+      </div>
+
+       <div class="widget">
+          <div class="d-flex flex-row">
+            <div>
+              <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="uil uil-at"></i> </div>
+            </div>
+            <div>
+              <h5 class="mb-1">Send Us A Mail</h5>
+              <p class="mb-0"><a href="mailto:'support@skilledcheck.com'">support@skilledcheck.com</a></p>
+            </div>
+          </div>
+          <!--/div -->
+        </div>
+      <!-- /column -->
+      <div class="col-lg-3">
+        <div class="widget">
+          <div class="d-flex flex-row">
+            <div>
+              <div class="icon text-primary fs-28 me-4 mt-n1"> <i class="uil uil-location-pin-alt"></i> </div>
+            </div>
+            <div class="align-self-start justify-content-start">
+              <h5 class="mb-1">Address</h5>
+              <address>No 58, Ogun line, Opposite BusyBrain Computer, <br>
+                Mammy Market, Ojo Military Cantonment, Lagos State</address>
+            </div>
+          </div>
+          <!--/div -->
+        </div>
+        <!-- /.widget -->
+      </div>
+      <!-- /column -->
+    </div>
+    <!--/.row -->
+    <hr class="mt-11 mt-md-12 mb-7" />
+    <div class="d-md-flex align-items-center justify-content-between">
+      <p class="mb-2 mb-lg-0">© 2022 Leehadyyah International Limited All rights reserved.</p>
+      <nav class="nav social social-muted mb-0 text-md-end">
+        <a href="#"><i class="uil uil-twitter"></i></a>
+        <a href="#"><i class="uil uil-facebook-f"></i></a>
+        <a href="#"><i class="uil uil-instagram"></i></a>
+        <a href="#"><i class="uil uil-youtube"></i></a>
+      </nav>
+      <!-- /.social -->
+    </div>
+  </div>
+  <!-- /.container -->
+</footer>
+<div class="progress-wrap">
+  <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+    <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+  </svg>
+</div>
+<script src="{% static 'assets/js/plugins.js' %}"></script>
+<script src="{% static 'assets/js/theme.js' %}"></script>
+</body>
+
+</html>
+  {% endblock content %}
